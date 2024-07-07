@@ -886,6 +886,12 @@ input{
     .envelope1{
         padding-left: 180px;
     }
+    .bar1{
+        width: 70%;
+    }
+    .bar2{
+        width: 55%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
@@ -1070,6 +1076,46 @@ input{
    .in{
     left: 170px;
    }
+
+   .html{
+    display: block;
+    /* width: 1050px; */
+}
+.colone{
+    padding-right: 60px;
+}
+.coltwo{
+    padding-right: 60px;
+}
+.colthree{
+    padding-right: 60px;
+}
+.colfour{
+    padding-right: 60px;
+}
+.js{
+    display: block;
+    width: 600px;
+}
+.bootstrap{
+    padding-right: 60px;
+}
+.php{
+    display: block;
+    width: 600px;
+}
+.laravel{
+    padding-right: 60px;
+}
+   .progress-bar{
+    width: 400px;
+}
+   .bar1{
+        width: 70%;
+}
+    .bar2{
+        width: 55%;
+}
 }
 
 
@@ -1093,6 +1139,7 @@ input{
         text-align: justify;
     }
     .html{
+        display: block;
         width: 800px;
         margin-top: 700px;
     }
@@ -1105,16 +1152,20 @@ input{
         padding-right: 50px;
     }
     .js{
+        display: block;
         width: 800px;
     }
     .bootstrap{
-        padding-right: 50px;
+        margin-top: 50px;
+        /* padding-right: 50px; */
     }
     .php{
+        display: block;
         width: 800px;
     }
     .laravel{
-        padding-right: 50px;
+        margin-top: 50px;
+        /* padding-right: 50px; */
     }
     .services{
         width: 700px;
@@ -1259,6 +1310,15 @@ input{
     .send{
         width: 360px;
     }
+    .progress-bar{
+        width: 400px;
+    }
+    .bar1{
+        width: 70%;
+    }
+    .bar2{
+        width: 55%;
+    }
 
 }
 
@@ -1298,6 +1358,15 @@ input{
     }
     .laravel{
         padding-right: 60px;
+    }
+    .progress-bar{
+        width: 400px;
+    }
+    .bar1{
+        width: 70%;
+    }
+    .bar2{
+        width: 55%;
     }
     .services{
         width: 1000px;
