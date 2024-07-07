@@ -1,0 +1,1379 @@
+.container-fluid{
+    position: relative;
+    display: grid;
+    overflow-x: hidden;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0px;
+    height: 700px;
+    padding-right: 0px;
+}
+.logo{
+    width: 130px;
+    height: 80px;
+}
+.nav-item{
+    padding: 15px;
+    font-weight: bold;
+    font-size: large;
+}
+.nav-link{
+    color: purple!important;
+}
+.nav-link:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.navbar-nav{
+    padding-left: 100px;
+}
+
+.bg{
+    color: white;
+    text-align: center;
+    font-size: 50pt;
+    position: relative;
+    width: 1263px;
+    height: 700px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.comma{
+    color: rgb(218, 59, 218);
+}
+.name{
+    font-size: 50pt;
+}
+#textContainer{
+    color: rgb(206, 55, 206);
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.cell{
+    font-size: medium;
+    margin-top: 50px;
+}
+.resume{
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    background-color: purple;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+  .bounce2 {
+    animation: bounce2 3s ease infinite;
+  }
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  }
+.resume a{
+    text-decoration: none;
+    /* color: rgb(247, 211, 247); */
+    color: rgb(237, 219, 219);
+}
+
+.about{
+    margin-top: 100px;
+}
+
+.head1{
+    text-align: center;
+    color: purple;
+    font-size: 40pt;
+    font-family: "Roboto Serif", serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight: bold; */
+}
+.para1{
+    font-size: 16.5pt;
+    line-height: 30px;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+.natasha{
+    position: absolute;
+    left: 850px;
+    margin-top: 80px;
+    height: 400px;
+}
+
+.center1 {
+    position: absolute;
+    top: 1405px;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(199, 48, 199);
+    width: 260px;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .linkedin{
+    padding-left: 30px;
+    color: black;
+  }
+  .linkedin:hover{
+    color: rgb(118, 17, 118);
+  }
+  .github{
+    position: absolute;
+    color: black;
+    left: 80px;
+  }
+
+  .github:hover{
+    color: rgb(118, 17, 118);
+  }
+
+  .envelope{
+    position: absolute;
+    color: black;
+    left: 140px;
+  }
+  
+  .envelope:hover{
+    color: rgb(118, 17, 118);
+  }
+
+  .phone{
+    position: absolute;
+    color: black;
+    left: 200px;
+  }
+
+  .phone:hover{
+    color: rgb(118, 17, 118);
+  }
+
+  .myskills{
+    color: purple;
+    font-size: 40pt;
+    font-family: "Roboto Serif", serif;
+  }
+.progress {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+.progress-bar {
+    height: 50px;
+    width: 0;
+    background-color: rgb(186, 52, 186);
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+.percent {
+    font-weight: bold;
+}
+
+.html{
+    margin-top: 100px;
+}
+
+.js{
+    margin-top: 50px;
+}
+
+
+.php{
+    margin-top: 50px;
+}
+
+.colone{
+    margin-top: 50px;
+}
+
+.coltwo{
+    margin-top: 50px;
+}
+.myservices{
+    color: purple;
+    font-size: 40pt;
+    font-family: "Roboto Serif", serif;
+}
+.services{
+    margin-top: 100px;
+}
+.service1{
+    border: 1px solid;
+    margin-top: 50px;
+}
+
+.service2{
+    border: 1px solid;
+    margin-top: 50px;
+}
+
+.service3{
+    border: 1px solid;
+    margin-top: 50px;
+}
+
+.service4{
+    border: 1px solid;
+    margin-top: 50px;
+}
+
+.serve1{
+    height: 80px; 
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.serve2{
+    height: 80px;
+    width: 210px;
+    border-radius: 25px;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.serve3{
+    height: 80px;
+    width: 210px;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.serve4{
+    height: 90px;
+    width: 250px;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.letscollaborate{
+    color: purple;
+    font-size: 40pt;
+    font-family: "Roboto Serif", serif;
+}
+.collaboration{
+    margin-top: 100px;
+}
+
+.natasha1{
+    position: absolute;
+    left: 100px;
+    margin-top: 90px;
+    height: 400px;
+}
+
+.collaborate{
+    margin-top: 100px;
+    font-size: x-large;
+}
+.profiles{
+    color: purple;
+    font-size: 40pt;
+    font-family: "Roboto Serif", serif;
+}
+.icons{
+    margin-top: 100px;
+}
+.linkedin1{
+    position: relative;
+    border: 1px solid;
+    padding-left: 170px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.link{
+    transition: color 0.5s ease;
+}
+.linkedin1 a {
+    position: relative;
+}
+.linkedin1 p{
+    position: relative;
+}
+.linkedin1:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.linkedin1:hover .link{
+    color: white;
+}
+.linkedin1:hover .caption {
+    color: white;
+}
+.github1{
+    position: relative;
+    border: 1px solid;
+    padding-left: 190px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.git{
+    transition: color 0.5s ease;
+}
+.github1 a {
+    position: relative;
+}
+.github1 p{
+    position: relative;
+}
+.github1:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.github1:hover .git{
+    color: white;
+}
+.github1:hover .caption {
+    color: white;
+}
+.envelope1{
+    position: relative;
+    border: 1px solid;
+    padding-left: 190px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.enve{
+    transition: color 0.5s ease;
+}
+.envelope1 a {
+    position: relative;
+}
+.envelope1 p{
+    position: relative;
+}
+.envelope1:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.envelope1:hover .enve{
+    color: white;
+}
+.envelope1:hover .caption {
+    color: white;
+}
+.caption{
+    font-size: larger;
+    margin-top: 20px;
+    transition: color 0.5s ease;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(86, 7, 86), #ff81f4);
+    /* background: rgb(81, 8, 81); */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.one{
+    text-decoration: none;
+    color: black;
+}
+
+.one:hover{
+    color: black;
+}
+
+.myportfolio{
+    color: purple;
+    font-size: 40pt;
+    font-family: "Roboto Serif", serif;
+}
+.projects1{
+    margin-top: 100px;
+}
+.projects2{
+    margin-top: 50px;
+}
+.project1{
+    margin-top: 50px;
+}
+.project2{
+    margin-top: 50px;
+}
+.project3{
+    margin-top: 30px;
+}
+.project4{
+    margin-top: 30px;
+}
+.description{
+    position: absolute;
+    transition: 0.5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #101210;
+    color: rgb(251, 247, 247);
+    font-size: 16px;
+    left: 315px;
+    margin-top: -140px;
+    width: 610px;
+    height: 280px;
+    font-weight: bold;
+}
+.desc1{
+    margin-top: 95px;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.anc1{
+    text-decoration: none;
+    color: rgb(255, 206, 255);
+}
+.anc1:hover{
+    color: blue;
+}
+
+.project1:hover .description {
+    opacity: 0.7;
+  }
+ 
+.demo{
+    border-radius: 25px;
+    background-color: rgb(170, 72, 212);
+    border: none;
+    /* text-decoration: none; */
+}
+.gradient-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, purple, #FF1493);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-position 0.3s ease;
+    background-size: 200% 200%;
+}
+
+.gradient-button:hover {
+    background-position: right bottom;
+}
+.scale-button {
+    padding: 10px 20px;
+    background-color: #FF1493;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: none;
+}
+
+.scale-button:hover {
+    transform: scale(1.1);
+    border-color: #FF1493;
+}
+ 
+
+.flight{
+    /* height: 200px; */
+    height: 280px;
+    width: 610px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.portfolio{
+    height: 280px;
+    width: 610px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.description1{
+    position: absolute;
+    transition: 0.5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #101210;
+    color: rgb(251, 247, 247);
+    font-size: 16px;
+    left: 950px;
+    margin-top: -140px;
+    width: 610px;
+    height: 280px;
+    font-weight: bold;
+}
+.desc2{
+    margin-top: 95px;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.project2:hover .description1 {
+    opacity: 0.7;
+}
+
+.anc2{
+    text-decoration: none;
+    color: rgb(255, 206, 255);
+}
+.anc2:hover{
+    color: blue;
+}
+
+.blog{
+    height: 280px;
+    width: 620px;
+}
+.description2{
+    position: absolute;
+    transition: 0.5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #101210;
+    color: rgb(251, 247, 247);
+    font-size: 16px;
+    left: 315px;
+    margin-top: -140px;
+    width: 620px;
+    height: 280px;
+    font-weight: bold;
+}
+.desc3{
+    margin-top: 100px;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.project3:hover .description2 {
+    opacity: 0.7;
+}
+
+.anc3{
+    text-decoration: none;
+    color: rgb(255, 206, 255);
+}
+.anc3:hover{
+    color: blue;
+}
+.aboutus{
+    height: 280px;
+    width: 600px;
+}
+
+.description3{
+    position: absolute;
+    transition: 0.5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #101210;
+    /* color: rgb(251, 247, 247); */
+    color: white;
+    font-size: 16px;
+    left: 944px;
+    margin-top: -140px;
+    width: 600px;
+    height: 280px;
+    font-weight: bold;
+}
+.desc4{
+    margin-top: 100px;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.project4:hover .description3 {
+    opacity: 0.7;
+}
+
+.anc4{
+    text-decoration: none;
+    color: rgb(255, 206, 255);
+}
+.anc4:hover{
+    color: blue;
+}
+.contactme{
+    color: purple;
+    font-size: 40pt;
+    font-family: "Roboto Serif", serif;
+}
+.contact{
+    margin-top: 100px;
+}
+input{
+    border: 1px solid purple;
+}
+.input2{
+    border: 1px solid purple;
+    width: 425px;
+}
+/* .email{
+    padding-left: 100px;
+} */
+.message{
+    border: 1px solid purple;
+}
+.send{
+    border: 2px solid purple;
+    font-weight: bold;
+    color: purple;
+    width: 430px;
+}
+.send:hover{
+    background-color: purple;
+    color: white;
+}
+.texts{
+    margin-top: 50px;
+    padding-left: 200px;
+}
+.contactform{
+    margin-top: 50px;
+}
+.info{
+    color: rgb(195, 45, 195);
+    font-size: 21pt;
+}
+.icons11{
+    margin-top: 20px;
+}
+.phone1{
+    position: absolute;
+    color: purple;
+    margin-top: 50px;
+    left: 200px;
+}
+.call{
+    position: absolute;
+    color: black;
+    margin-top: 45px;
+    left: 220px;
+}
+.linkedin2{
+    position: absolute;
+    color: purple;
+    margin-top: 100px;
+    left: 200px;
+}
+
+.in{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 95px;
+    left: 220px;
+    color: black;
+}
+.email1{
+    color: purple;
+}
+.mail{
+    color: black;
+    text-decoration: none;
+}
+.calling{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:480px){
+    .natasha{
+        display: none;
+    }
+    .centered{
+        position: absolute;
+        left: 200px;
+    }
+    .about{
+        width: 400px;
+        text-align: center;
+    }
+    .para1{
+        position: absolute;
+        margin-top: 10px;
+        min-width: 300px;
+        left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
+    }
+    .center1{
+        position: absolute;
+        left: 200px;
+        top: 1750px;
+    }
+    .html{
+        margin-top: 900px;
+        display: block;
+    }
+    .js{
+       display: block; 
+    }
+    .php{
+        display: block;
+    }
+    /* .coltwo{
+        margin-top: 50px;
+    } */
+     .bootstrap{
+        margin-top: 50px;
+     }
+    .laravel{
+        margin-top: 50px;
+    }
+    .progress{
+        width: 400px;
+    }
+    .progress-bar{
+        width: 400px;
+    }
+    .services{
+        width: 410px;
+    }
+    .serve1{
+        padding-left: 130px;
+    }
+    .serve2{
+        padding-left: 120px;
+        width: 270px;
+    }
+    .serve3{
+        padding-left: 120px;
+        width: 270px;
+    }
+    .serve4{
+        padding-left: 110px;
+        width: 280px;
+    }
+    .natasha1{
+        display: none;
+    }
+    .collaboration{
+        width: 410px;
+        font-size: 15pt;
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+    .collaborate{
+        min-width: 400px;
+        padding-left: 0px;
+        padding-right: 30px;
+        text-align: justify;
+        margin-top: 30px;
+    }
+    .icons{
+        width: 410px;
+    }
+    .projects1{
+        width: 430px;
+    }
+    .flight{
+        margin-top: 50px;
+        width: 390px;
+        height: 180px;
+    }
+    .heading2{
+        font-size: 40pt;
+    }
+    .portfolio{
+        width: 390px;
+        height: 180px;
+    }
+    .blog{
+        width: 400px;
+        height: 250px;
+    }
+    .aboutus{
+        margin-top: 30px;
+        width: 400px;
+        height: 180px;
+    }
+    .contact{
+        width: 400px;
+        margin-top: 100px;
+    }
+    .texts{
+        padding-left: 80px;
+    }
+    .email{
+        position: absolute;
+        width: 200px;
+        left: 163px;
+    }
+    .input2{
+        width: 400px;
+    }
+    .message{
+        width: 400px;
+    }
+    .send{
+        width: 400px;
+    }
+    .contactform{
+        padding-top: 0px;
+        margin-top: 150px;
+        width: 400px;
+    }
+    .phone1{
+        left: 80px;
+    }
+    .call{
+        left: 100px;
+    }
+    .linkedin2{
+        left: 80px;
+    }
+    .in{
+        left: 100px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .centered{
+        position: absolute;
+        left: 290px;
+    }
+    .natasha{
+        display: none;
+    }
+    .about{
+        border: 1px solid;
+        width: 580px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .myself{
+        margin-top: 50px;
+        min-width: 700px;
+        padding-right: 180px;
+        text-align: justify;
+    }
+    .center1{
+        position: absolute;
+        margin-top: 280px;
+        left: 300px;
+    }
+    .linkedin{
+        padding-right: 200px;
+        margin-left: 0px;
+    }
+    .html{
+        margin-top: 200px;
+        display: block;
+        width: 600px;
+    }
+    .js{
+        display: block;
+    }
+    .bootstrap{
+        margin-top: 50px;
+        display: block;
+    }
+    .php{
+        display: block;
+    }
+    .laravel{
+        margin-top: 50px;
+        display: block;
+    }
+    .services{
+        width: 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .natasha1{
+       display: none;
+    }
+    .collaboration{
+        width: 600px;
+    }
+    .collaborate{
+        min-width: 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .projects1{
+        margin-top: 800px;
+        width: 700px;
+        margin-left: 100px;
+    }
+    .icons{
+        width: 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .linkedin1{
+        padding-left: 120px;
+    }
+    .github1{
+        padding-left: 120px;
+    }
+    .envelope1{
+        padding-left: 250px;
+    }
+    .projects1{
+        width: 390px;
+        padding-left: 0px;
+        margin-top: 100px;
+    }
+    .project1{
+        width: 400px;
+        padding-left: 0px;
+    }
+    .flight{
+        width: 390px;
+        height: 160px;
+    }
+    .description{
+        position: absolute;
+        margin-top: -81px;
+        left: 305px;
+        width: 390px;
+        height: 160px;
+    }
+    .desc1{
+        margin-top: 20px;
+    }
+    .portfolio{
+        position: absolute;
+        width: 390px;
+        height: 160px;
+        left: 115px;
+    }
+    .description1{
+        position: absolute;
+        margin-top: 80px;
+        left: 308px;
+        width: 390px;
+        height: 160px;
+    }
+    .desc2{
+        margin-top: 20px;
+    }
+
+    .blog{
+       position: absolute;
+       margin-top: 150px;
+       width: 390px;
+       height: 160px;
+       left: 115px;
+    }
+    .description2{
+        position: absolute;
+        margin-top: 230px;
+        left: 308px;
+        width: 390px;
+        height: 160px;
+    }
+    .desc3{
+        margin-top: 20px;
+    }
+    .aboutus{
+        width: 500px;
+        height: 150px;
+        margin-top: 350px;
+        padding-left: 115px;
+    }
+    .description3{
+        position: absolute;
+        margin-top: -75px;
+        left: 320px;
+        width: 385px;
+        height: 150px;
+    }
+    .desc4{
+        margin-top: 20px;
+    }
+    .contact{
+        margin-top: 100px;
+        width: 570px;
+    }
+    .texts{
+        padding-left: 150px;
+    }
+   .contactform{
+    margin-top: 200px;
+    padding-left: 80px;
+   }
+   .message{
+    width: 425px;
+   }
+   .phone1{
+    left: 150px;
+   }
+   .call{
+    left: 170px;
+   }
+   .linkedin2{
+    left: 150px;
+   }
+   .in{
+    left: 170px;
+   }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .centered{
+        position: absolute;
+        left: 400px;
+    }
+    .natasha{
+       display: none;
+    }
+    .about{
+        width: 800px;
+    }
+    .para1{
+        margin-top: 50px;
+        position: absolute;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: justify;
+    }
+    .html{
+        width: 800px;
+        margin-top: 700px;
+    }
+    .center1{
+        position: absolute;
+        left:400px;
+        margin-top: 50px;
+    }
+    .coltwo{
+        padding-right: 50px;
+    }
+    .js{
+        width: 800px;
+    }
+    .bootstrap{
+        padding-right: 50px;
+    }
+    .php{
+        width: 800px;
+    }
+    .laravel{
+        padding-right: 50px;
+    }
+    .services{
+        width: 700px;
+        padding-left: 100px;
+    }
+    .serve{
+        padding-left: 140px;
+    }
+    .collaboration{
+       width: 800px;
+    }
+    .natasha1{
+        position: absolute;
+        left: 20px;
+        width: 250px;
+        height: 320px;
+        margin-top: 200px;
+    }
+    .collaborate{
+        min-width: 500px;
+        padding-right: 50px;
+        text-align: justify;
+    }
+    .icons{
+        width: 770px;
+    }
+    .linkedin1{
+        padding-left: 100px;
+        padding-right: 80px;
+    }
+    .github1{
+        padding-left: 100px;
+        padding-right: 80px;
+    }
+    .envelope1{
+        padding-left: 100px;
+        padding-right: 80px;
+    }
+    .projects1{
+        width: 800px;
+    }
+    .flight{
+        width: 700px;
+        margin-top: 30px;
+        padding-left: 50px;
+    }
+    .description{
+        position: absolute;
+        margin-top: -140px;
+        left: 388px;
+        width: 650px;
+        height: 280px;
+    }
+    .desc1{
+        margin-top: 100px;
+    }
+    .portfolio{
+        position: absolute;
+        width: 650px;
+        margin-top: 400px;
+        left: 65px;
+    }
+    .description1{
+        position: absolute;
+        margin-top: 540px;
+        left: 388px;
+        width: 649px;
+        height: 280px;
+    }
+    .desc2{
+        margin-top: 100px;
+    }
+    .blog{
+        width: 715px;
+        height: 400px;
+        margin-top: 400px;
+        padding-left: 50px;
+    }
+    .description2{
+        position: absolute;
+        margin-top: -200px;
+        left: 392px;
+        width: 652px;
+        height: 400px;
+    }
+    .desc3{
+        margin-top: 150px;
+    }
+    .aboutus{
+        position: absolute;
+        left: 60px;
+        margin-top: 850px;
+        width: 670px;
+    }
+    .description3{
+        position: absolute;
+        margin-top: 990px;
+        left: 393px;
+        width: 660px;
+        height: 280px;
+    }
+    .desc4{
+        margin-top: 100px;
+    }
+    .contact{
+        width: 800px;
+        margin-top: 500px;
+    }
+    .texts{
+        padding-left: 20px;
+    }
+    .phone1{
+        left: 20px;
+    }
+    .call{
+        left: 40px;
+    }
+    .linkedin2{
+        left: 20px;
+    }
+    .in{
+        left: 40px;
+    }
+    .contactform{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .email{
+        position: absolute;
+        left: 550px;
+        width: 160px;
+    }
+    .input1{
+        width: 160px;
+    }
+    .input2{
+        width: 360px;
+    }
+    .message{
+        width: 360px;
+    }
+    .send{
+        width: 360px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .navbar-nav{
+        padding-left: 0px;
+    }
+    .centered{
+        position: absolute;
+        left: 500px;
+    }
+    .about{
+        width: 1050px;
+    }
+    .natasha{
+       position: absolute;
+       left: 650px;
+    }
+    .para1{
+        margin-top: 50px;
+        text-align: justify;
+    }
+    .html{
+        width: 1050px;
+    }
+    .coltwo{
+        padding-right: 60px;
+    }
+    .js{
+        width: 1050px;
+    }
+    .bootstrap{
+        padding-right: 60px;
+    }
+    .php{
+        width: 1050px;
+    }
+    .laravel{
+        padding-right: 60px;
+    }
+    .services{
+        width: 1000px;
+    }
+    .collaboration{
+        width: 1050px;
+    }
+    .natasha1{
+        position: absolute;
+        left: 50px;
+        width: 350px;
+    }
+    .collaborate{
+        padding-left: 0px;
+        padding-right: 80px;
+        text-align: justify;
+    }
+    .icons{
+        width: 1000px;
+    }
+    .linkedin1{
+        padding-left: 150px;
+        padding-right: 50px;
+    }
+    .github1{
+        padding-left: 150px;
+        padding-right: 50px;
+    }
+    .envelope1{
+        padding-left: 150px;
+        padding-right: 50px;
+    }
+    .projects1{
+        width: 1050px;
+    }
+    .project1{
+        margin-top: 50px;
+    }
+    .flight{
+        width: 450px;
+        height: 200px;
+    }
+    .description{
+        position: absolute;
+        margin-top: -100px;
+        left: 235px;
+        width: 450px;
+        height: 200px;
+    }
+    .desc1{
+        margin-top: 60px;
+    }
+    .portfolio{
+        position: absolute;
+        height: 200px;
+        width: 500px;
+        left: 480px;
+        padding-left: 0px;
+    }
+    .description1{
+        position: absolute;
+        margin-top: 100px;
+        left: 730px;
+        width: 500px;
+        height: 200px;
+    }
+    .desc2{
+        margin-top: 60px;
+    }
+    .blog{
+        height: 200px;
+        width: 450px;
+    }
+    .description2{
+        position: absolute;
+        margin-top: -100px;
+        left: 235px;
+        width: 440px;
+        height: 200px;
+    }
+    .desc3{
+        margin-top: 60px;
+    }
+    .aboutus{
+        position: absolute;
+        left: 480px;
+        height: 200px;
+        width: 500px;
+    }
+    .description3{
+        position: absolute;
+        margin-top: 100px;
+        left: 730px;
+        width: 500px;
+        height: 200px;
+    }
+    .desc4{
+        margin-top: 60px;
+    }
+    .contact{
+        width: 1050px;
+    }
+    .texts{
+        padding-left: 20px;
+    }
+    .phone1{
+        left: 20px;
+    }
+    .call{
+        left: 40px;
+    }
+    .linkedin2{
+        left: 20px;
+    }
+    .in{
+        left: 42px;
+    }
+    .message{
+        width: 425px;
+    }
+}
+
+@media (min-width: 1200px){
+    .center1{
+        left: 985px;
+    }
+}

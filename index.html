@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <script>
+        // Function to check if the element is in the viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to animate the progress bars
+        function animateProgressBars() {
+            var progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(function (bar) {
+                var percentage = bar.parentElement.getAttribute('data-percentage');
+                bar.style.width = percentage + '%';
+            });
+        }
+
+        // Event listener for scroll event
+        window.addEventListener('scroll', function () {
+            var skillsSection = document.getElementById('skillsSection');
+            if (isElementInViewport(skillsSection)) {
+                animateProgressBars();
+                // Remove the scroll event listener after animating to prevent re-triggering
+                window.removeEventListener('scroll', arguments.callee);
+            }
+        });
+
+        // Initial check in case the element is already in view
+        document.addEventListener('DOMContentLoaded', function() {
+            var skillsSection = document.getElementById('skillsSection');
+            if (isElementInViewport(skillsSection)) {
+                animateProgressBars();
+                window.removeEventListener('scroll', arguments.callee);
+            }
+        });
+    </script>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- <img src="bg.jpg" alt="" class="background"> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                <div class="container-fluid">
+                  <img src="logo-transparent-png.png" alt="" class="logo">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#collaborate">Expertise</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#profiles">Profiles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#project">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                      </li>
+                    </ul>  
+                  </div> 
+                </div>
+            </nav>
+        </div>
+        <section id="home">
+            <div class="row bg">
+                <img src="bg.jpg" alt="" class="background">
+                <div class="centered"> <strong>HI <span class="comma">,</span> I'M </strong>
+                    <h1 class="name"> <strong> NATASHA</strong></h1>
+                    <h1 class="name"> <strong>  ASNANI <span class="comma">.</span></strong></h1> 
+                    <h1 id="textContainer">Front-end Developer!</h1> 
+                    <div class="cell">
+                        <div class="circle bounce2">
+                            <button class="resume" data-aos="zoom-in-up"> 
+                                <a href="https://drive.google.com/file/d/1DNYISDChb1okBoYppIFyc_On9l_poi9q/view?usp=drive_link"> DOWNLOAD RESUME </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="about">
+        <div class="row about">
+                <p class="text-center text-muted">Who Am I ?</p>
+                <h2 class="head1">About Me</h2>
+            <div class="col myself">
+                <p class="para1 bg-gradient text-muted"> <b> I’m a passionate web developer currently pursuing my bachelor’s degree at SZABIST. With six months of hands-on experience in the field, I have crafted numerous projects that showcase my expertise and creativity in web development. I specialize in creating intuitive and visually appealing front-end interfaces that not only captivate users but also enhance their digital experience.</b> <br><br>
+                My journey in web development is driven by a commitment to excellence and a desire to bring innovative ideas to life. Whether it’s a personal project or a collaborative endeavor, I strive to merge functionality with aesthetic appeal, ensuring each creation is both beautiful and user-friendly. Explore my portfolio to see the dynamic projects I've worked on and how I can bring your vision to life. </p>
+            </div>
+            <div class="col">
+                <img src="NatashaAsnani1.png" alt="" class="natasha">
+                <div class="center1"> 
+                    <a href="https://www.linkedin.com/in/natasha-asnani?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeLggQPkIRfqPv5AyB8oDuA%3D%3D"> <i class="fa fa-linkedin linkedin" style="font-size: 20pt;"></i>  </a> 
+                    <a href="https://github.com/NatashaAsnani"> <i class="fa fa-github github" style="font-size: 20pt;"></i> </a>      
+                    <a href="mailto: natasha.asnani21@gmail.com"><i class="fa fa-envelope envelope" style="font-size: 20pt;"></i> </a>  
+                    <a href="call: +92 3316648781"> <i class="fa fa-phone phone" style="font-size: 20pt;"></i>  </a>      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills" id="skillsSection">
+            <div class="row html">
+                <h1 class="text-center myskills">MY SKILLS</h1>
+                <div class="col colone">
+                    <h5>HTML</h5>
+                    <div class="progress bar" data-percentage="100">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div> 
+                        <span class="percent">100%</span>
+                    </div>
+                </div>        
+                <div class="col coltwo">
+                    <h5>CSS</h5>
+                    <div class="progress" data-percentage="95">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div> 
+                        <span class="percent">99%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row js">
+                <div class="col">
+                    <h5>JavaScript</h5>
+                    <div class="progress" data-percentage="70">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div> 
+                        <span class="percent">70%</span>
+                    </div>
+                </div>
+                <div class="col bootstrap">
+                    <h5>Bootstrap</h5>
+                    <div class="progress" data-percentage="98">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>  
+                        <span class="percent">98%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row php">
+                <div class="col">
+                    <h5>PHP</h5>
+                    <div class="progress" data-percentage="70">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>   
+                        <span class="percent">70%</span>
+                    </div>
+                </div>
+                <div class="col laravel">
+                    <h5>Laravel</h5>
+                    <div class="progress" data-percentage="55">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div> 
+                        <span class="percent">55%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+       <div class="row services">
+        <p class="text-muted text-center">What I offer</p>
+        <h1 class="text-center myservices">My Services</h1>
+            <div class="col service1">
+                <img src="webdesign1.png" alt="" class="serve1">
+                <h4 class="text-center">Custom Website</h4>
+                <p class="text-muted text-center">Creating unique website designs that reflect your brand's essence, elevating user engagement seamlessly across all platforms.</p>
+            </div>
+            <div class="col service2">
+                <img src="all.png" alt="" class="serve2">
+                <h4 class="text-center">Front-end Development</h4>
+                <p class="text-muted text-center">Crafting responsive and intuitive user-interfaces with HTML, CSS, JavaScript, and Bootstrap for consistent functionality across all devices.</p>
+            </div>
+            <div class="col service3">
+                <img src="ui_ux_design1.png" alt="" class="serve3">
+                <h4 class="text-center">UI/UX Design</h4>
+                <p class="text-muted text-center">Crafting engaging UI/UX designs for seamless interaction and aesthetic appeal across all platforms.</p>
+            </div>
+            <div class="col service4">
+                <img src="response1.png" alt="" class="serve4">
+                <h4 class="text-center">Responsive Design</h4>
+                <p class="text-muted text-center">Creating flexible and adaptive web layouts that adjust smoothly to different screen sizes and devices for an optimal user experience.</p>
+            </div>
+       </div>
+    </section>
+
+    <section id="collaborate">
+       <div class="row collaboration">
+        <p class="text-muted text-center">Why Choose Me</p>
+        <h1 class="text-center letscollaborate">Let's Collaborate</h1>
+            <div class="col">
+                <img src="NatashaAsnani1.png" alt="" class="natasha1">
+            </div>
+            <div class="col collaborate">
+                <p>In the vast digital landscape, your project deserves a distinctive touch that merges creativity with cutting-edge technology. As a front-end enthusiast, I excel in crafting visually stunning and intuitive user experiences. My unique approach ensures that every element serves a purpose, creating seamless and engaging interfaces. <br><br>  With a deep understanding of development from concept to completion, I bring your vision to life with precision and flair. Collaborating with me means transforming your ideas into exceptional digital realities that stand out and captivate your audience. Let's redefine the digital experience together.</p>
+            </div>
+       </div>
+    </section>
+
+    <section id="profiles">
+       <div class="row icons">
+        <p class="text-muted text-center">Where You Can Find Me</p>
+        <h1 class="text-center profiles">Profiles</h1>
+            <div class="col linkedin1">
+                <div class="overlay"></div>
+                <a class="one" href="https://www.linkedin.com/in/natasha-asnani?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeLggQPkIRfqPv5AyB8oDuA%3D%3D">  <i class="fa fa-linkedin link" style="font-size: 50px;"></i> </a>
+                <p class="caption">Linkedin</p>
+            </div>
+            <div class="col github1">
+                <div class="overlay"></div>
+                <a class="one" href="https://github.com/NatashaAsnani"> <i class="fa fa-github git" style="font-size: 50px;"></i> </a>      
+                <p class="caption">Github</p>
+            </div>
+            <div class="col envelope1">
+                <div class="overlay"></div>
+                <a class="one" href="mailto: natasha.asnani21@gmail.com"><i class="fa fa-envelope enve" style="font-size: 50px;"></i></a>  
+                <p class="caption">Email</p>
+            </div>
+       </div>
+    </section>
+
+    <section id="project">
+       <div class="row projects1">
+        <p class="text-muted text-center">What I did?</p>
+        <h1 class="text-center myportfolio">Portfolio</h1>
+            <div class="col-md-6 project1">
+                <img src="Flight.jpg" alt="" class="flight">
+                <div class="description">
+                    <p class="desc1">Flight Booking Website</p>
+                    <button class="demo gradient-button scale-button"><a class="anc1" href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
+                </div>
+            </div>
+            <div class="col-md-6 project2">
+                <img src="portfolio1.png" alt="" class="portfolio">
+                <div class="description1">
+                    <p class="desc2">Portfolio Website</p>
+                    <button class="demo gradient-button scale-button"><a class="anc2" href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
+                </div>
+            </div>
+       </div>
+
+       <div class="row projects2">
+        <div class="col-md-6 project3">
+            <img src="blog.png" alt="" class="blog">
+            <div class="description2">
+                <p class="desc3">The Blog Webpage</p>
+                <button class="demo gradient-button scale-button"><a class="anc3" href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
+            </div>
+        </div>
+        <div class="col-md-6 project4">
+            <img src="aboutus1.png" alt="" class="aboutus">
+            <div class="description3">
+                <p class="desc4">AboutUs Webpage</p>
+                <button class="demo gradient-button scale-button"><a  class="anc4"  href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <section id="contact">
+       <div class="row contact">
+            <p class="text-muted text-center contactme1">How Can You Communicate</p>
+            <h1 class="text-center contactme">Contact Me</h1>
+            <div class="col-md-6 texts">
+                <h3>CONTACT IN<span class="info">FO</span> </h3>
+                <div class="icons11">
+                    <i class="fa fa-envelope email1"></i> 
+                    <span class="mailing">Email: <a class="mail" href="mailto: natasha.asnani21@gmail.com"> natasha.asnani21@gmail.com</a></span>
+                    <i class="fa fa-phone phone1"></i> 
+                    <span class="call"> <a class="calling" href="call:+92 3316648781"> Phone: +92 3316648781 </a> </span> 
+                    <i class="fa fa-linkedin linkedin2"></i>
+                    <a class="in" href="https://www.linkedin.com/in/natasha-asnani?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeLggQPkIRfqPv5AyB8oDuA%3D%3D">www.linkedin.com/in/natasha-asnani</a>
+            </div>
+            </div>
+            <div class="col-md-6 contactform">
+                <form  action="https://formspree.io/f/xrbzgjyq" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="input1" id="exampleInputText1" aria-describedby="emailHelp" placeholder="Name" name="Name" required>
+                        <input type="email" class="email mx-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" name="Email" required>
+                      </div>
+                    <div class="mb-3">
+                      <input type="text" class="input2" id="exampleInputText2" placeholder="Subject" name="Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="message" name="" id="" cols="55" rows="4" placeholder="Enter Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn send">Send</button>
+                  </form>
+            </div>
+       </div>
+    </section>
+    </div>
+</body>
+</html>
