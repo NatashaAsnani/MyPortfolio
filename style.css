@@ -13,7 +13,7 @@
     padding-right: 0px;
 }
 .logo{
-    width: 130px;
+    width: 120px;
     height: 80px;
 }
 .nav-item{
@@ -724,9 +724,6 @@ input{
     .php{
         display: block;
     }
-    /* .coltwo{
-        margin-top: 50px;
-    } */
      .bootstrap{
         margin-top: 50px;
      }
@@ -760,6 +757,10 @@ input{
     .natasha1{
         display: none;
     }
+    .linkedin{
+        margin-left: 0px;
+        padding-right: 200px;
+    }
     .collaboration{
         width: 410px;
         font-size: 15pt;
@@ -784,21 +785,58 @@ input{
         width: 390px;
         height: 180px;
     }
-    .heading2{
-        font-size: 40pt;
+    .description{
+        position: absolute;
+        margin-top: -90px;
+        left: 205px;
+        width: 390px;
+        height: 180px;
+    }
+    .desc1{
+        margin-top: 40px;
     }
     .portfolio{
         width: 390px;
         height: 180px;
     }
+    .description1{
+        position: absolute;
+        margin-top: -90px;
+        left: 205px;
+        width: 390px;
+        height: 180px;
+    }
+    .desc2{
+        margin-top: 40px;
+    }
     .blog{
         width: 400px;
         height: 250px;
+    }
+    .description2{
+        position: absolute;
+        margin-top: -129px;
+        left: 211px;
+        width: 390px;
+        height: 240px;
+    }
+    .desc3{
+        margin-top: 60px;
     }
     .aboutus{
         margin-top: 30px;
         width: 400px;
         height: 180px;
+    }
+    .description3{
+        position: absolute;
+        margin-top: -90px;
+        left: 210px;
+        width: 395px;
+        height: 180px;
+    }
+    .desc4{
+        margin-top: 40px;
     }
     .contact{
         width: 400px;
