@@ -6,322 +6,247 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <script>
-        // Function to check if the element is in the viewport
-        function isElementInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        // Function to animate the progress bars
-        function animateProgressBars() {
-            var progressBars = document.querySelectorAll('.progress-bar');
-            progressBars.forEach(function (bar) {
-                var percentage = bar.parentElement.getAttribute('data-percentage');
-                bar.style.width = percentage + '%';
-            });
-        }
-
-        // Event listener for scroll event
-        window.addEventListener('scroll', function () {
-            var skillsSection = document.getElementById('skillsSection');
-            if (isElementInViewport(skillsSection)) {
-                animateProgressBars();
-                // Remove the scroll event listener after animating to prevent re-triggering
-                window.removeEventListener('scroll', arguments.callee);
-            }
-        });
-
-        // Initial check in case the element is already in view
-        document.addEventListener('DOMContentLoaded', function() {
-            var skillsSection = document.getElementById('skillsSection');
-            if (isElementInViewport(skillsSection)) {
-                animateProgressBars();
-                window.removeEventListener('scroll', arguments.callee);
-            }
-        });
-    </script>
-
-
-    <div class="container-fluid">
-        <div class="row">
-            <!-- <img src="bg.jpg" alt="" class="background"> -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-                <div class="container-fluid">
-                  <img src="logo-transparent-png.png" alt="" class="logo">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#skills">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#services">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#collaborate">Expertise</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#profiles">Profiles</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#project">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#contact">Contact</a>
-                      </li>
-                    </ul>  
-                  </div> 
-                </div>
-            </nav>
+    <div class="container-fluid about">
+        <div class="row ">
+            <div class="head">
+                <h1 class="text-white text-center heading">About Us</h1>
+                <p class="text-white text-center paragraph">Web Development Services, Domain, and Web Hosting Since 2024</p>
+            </div>
         </div>
-        <section id="home">
-            <div class="row bg">
-                <img src="bg.jpg" alt="" class="background">
-                <div class="centered"> <strong>HI <span class="comma">,</span> I'M </strong>
-                    <h1 class="name"> <strong> NATASHA</strong></h1>
-                    <h1 class="name"> <strong>  ASNANI <span class="comma">.</span></strong></h1> 
-                    <h1 id="textContainer">Front-end Developer!</h1> 
-                    <div class="cell">
-                        <div class="circle bounce2">
-                            <button class="resume" data-aos="zoom-in-up"> 
-                                <a href="https://drive.google.com/file/d/1DNYISDChb1okBoYppIFyc_On9l_poi9q/view?usp=drive_link"> DOWNLOAD RESUME </a>
-                            </button>
+    </div>
+    <div class="container cont2">
+        <div class="row row11">
+            <div class="col-md-5 image">
+                <img src="image1.jpg" alt="" class="image1">
+            </div>
+            <div class="col-md-2 line-container">
+                <div class="line"></div>
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                <div class="circle circle4"></div>
+            </div>
+            <div class="col-md-5 para">
+                <h3 class="text-primary">What is CodePro</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat facere velit rem, vel assumenda fuga ex provident hic, odio veniam totam atque pariatur sapiente maxime porro temporibus? Quo, similique? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, obcaecati quidem at veritatis id illo qui, repudiandae ipsa quam libero officiis dicta laborum repellendus. Qui commodi vero ratione numquam a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos fugiat maiores sequi aliquam voluptates reprehenderit animi accusamus, totam tempore mollitia nobis. Tempore qui maiores architecto illum dolore alias amet similique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nisi quidem doloribus ipsum, itaque, amet voluptatem aliquid expedita officiis incidunt nobis illum quas nulla quam voluptas. Ad consequatur vitae fugit.</p>
+                <h3 class="text-primary mission">Our Mission</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vel ab consectetur nemo, eveniet molestias maxime? Facere, expedita, labore eius voluptatem ipsum reprehenderit, voluptatibus veniam rerum praesentium temporibus officiis inventore!</p>
+                <h3 class="text-primary mission">Our Vision</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vel ab consectetur nemo, eveniet molestias maxime? Facere, expedita, labore eius voluptatem ipsum reprehenderit, voluptatibus veniam rerum praesentium temporibus officiis inventore!</p>
+                <h3 class="text-primary mission">Our Strengths</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vel ab consectetur nemo, eveniet molestias maxime? Facere, expedita, labore eius voluptatem ipsum reprehenderit, voluptatibus veniam rerum praesentium temporibus officiis inventore!</p>
+            </div>
+        </div>
+        <div class=" container-fluid marquee-container">
+            <span class="marquee-static partner">Our Partners</span>
+            <div class="marquee-wrapper">
+                <div class="marquee">
+                    <div>                
+                        <span class="part1">Lorem ipsum.</span>
+                        <span class="part2">Lorem ipsum.</span>
+                        <span class="part3">Lorem ipsum.</span>
+                        <span class="part4">Lorem ipsum.</span>
+                    </div>
+                    <div>
+                        <span class="part1">Lorem ipsum.</span>
+                        <span class="part2">Lorem ipsum.</span>
+                        <span class="part3">Lorem ipsum.</span>
+                        <span class="part4">Lorem ipsum.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row contacting">
+            <div class="contact">
+                <h4 class="text-white fs-1">Contact Us Today</h4>
+                <img src="lights.png" alt="" class="lights"> 
+                <div class="phones">
+                    <button class="contactUs"> <i class="fas fa-tty"></i> Contact Us</button>
+                    <button class="callUs"> <i class="fas fa-phone-volume"></i> Call Us</button>
+                </div>
+            </div>
+        </div>
+        <div class="row code">
+            <div class="col-md-5 codeicon">
+                <img src="background.jpg" alt="" class="background">
+                <img src="codepro.jpg" alt="" class="codepro">  
+                <p class="digital">We Build Brands</p>
+                <div>
+                    <i class="fab fa-linkedin linkedin"></i>
+                    <i class="fab fa-facebook facebook"></i>
+                </div>
+                <div class="text-white address">
+                    <p>Call: 111-222-333</p>
+                    <p>Whatsapp: +922392082821</p>
+                    <p>Address: Unknown</p>
+                </div>
+            </div>
+            <div class="col-md-7 companies">
+                <div class="row firstrow">
+                    <div class="col company">
+                        <h4>Company</h4>
+                        <a href="">Home</a>
+                        <div>
+                            <a href="">About</a>
+                        </div>
+                        <div>
+                            <a href="">FAQ</a>
+                        </div>
+                        <div>
+                            <a href="">CodePro Careers</a>
+                        </div>
+                        <div>
+                            <a href="">Industries</a>
+                        </div>
+                        <div>
+                            <a href="">Blogs</a>
+                        </div>
+                        <div>
+                            <a href="">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col services" >
+                        <h4>IT Services</h4>
+                        <a href=""> Network Monitoring</a>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row secondrow">
+                    <div class="col hosting">
+                        <h4>Hosting</h4>
+                        <a href="">Lorem</a>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                    </div>
+                    <div class="col domain">
+                        <h4>Domain</h4>
+                        <a href="">Lorem</a>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div>
+                            <a href="">Lorem</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-    <section id="about">
-        <div class="row about">
-                <p class="text-center text-muted">Who Am I ?</p>
-                <h2 class="head1">About Me</h2>
-            <div class="col myself">
-                <p class="para1 bg-gradient text-muted"> <b> I’m a passionate web developer currently pursuing my bachelor’s degree at SZABIST. With six months of hands-on experience in the field, I have crafted numerous projects that showcase my expertise and creativity in web development. I specialize in creating intuitive and visually appealing front-end interfaces that not only captivate users but also enhance their digital experience.</b> <br><br>
-                My journey in web development is driven by a commitment to excellence and a desire to bring innovative ideas to life. Whether it’s a personal project or a collaborative endeavor, I strive to merge functionality with aesthetic appeal, ensuring each creation is both beautiful and user-friendly. Explore my portfolio to see the dynamic projects I've worked on and how I can bring your vision to life. </p>
-            </div>
-            <div class="col">
-                <img src="NatashaAsnani1.png" alt="" class="natasha">
-                <div class="center1"> 
-                    <a href="https://www.linkedin.com/in/natasha-asnani?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeLggQPkIRfqPv5AyB8oDuA%3D%3D"> <i class="fa fa-linkedin linkedin" style="font-size: 20pt;"></i>  </a> 
-                    <a href="https://github.com/NatashaAsnani"> <i class="fa fa-github github" style="font-size: 20pt;"></i> </a>      
-                    <a href="mailto: natasha.asnani21@gmail.com"><i class="fa fa-envelope envelope" style="font-size: 20pt;"></i> </a>  
-                    <a href="call: +92 3316648781"> <i class="fa fa-phone phone" style="font-size: 20pt;"></i>  </a>      
-                </div>
-            </div>
         </div>
-    </section>
-
-    <section id="skills">
-        <div class="skills" id="skillsSection">
-            <div class="row html">
-                <h1 class="text-center myskills">MY SKILLS</h1>
-                <div class="col colone">
-                    <h5>HTML</h5>
-                    <div class="progress bar" data-percentage="100">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div> 
-                        <span class="percent">100%</span>
-                    </div>
-                </div>        
-                <div class="col coltwo">
-                    <h5>CSS</h5>
-                    <div class="progress" data-percentage="95">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div> 
-                        <span class="percent">99%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row js">
-                <div class="col colthree">
-                    <h5>JavaScript</h5>
-                    <div class="progress" data-percentage="70">
-                        <div class="progress-bar bar1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div> 
-                        <span class="percent">70%</span>
-                    </div>
-                </div>
-                <div class="col bootstrap">
-                    <h5>Bootstrap</h5>
-                    <div class="progress" data-percentage="98">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>  
-                        <span class="percent">98%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row php">
-                <div class="col colfour">
-                    <h5>PHP</h5>
-                    <div class="progress" data-percentage="70">
-                        <div class="progress-bar bar1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>   
-                        <span class="percent">70%</span>
-                    </div>
-                </div>
-                <div class="col laravel">
-                    <h5>Laravel</h5>
-                    <div class="progress" data-percentage="55">
-                        <div class="progress-bar bar2" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div> 
-                        <span class="percent">55%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-       <div class="row services">
-        <p class="text-muted text-center">What I offer ?</p>
-        <h1 class="text-center myservices">My Services</h1>
-            <div class="col service1">
-                <img src="webdesign1.png" alt="" class="serve1">
-                <h4 class="text-center">Custom Website</h4>
-                <p class="text-muted text-center">Creating unique website designs that reflect your brand's essence, elevating user engagement seamlessly across all platforms.</p>
-            </div>
-            <div class="col service2">
-                <img src="all.png" alt="" class="serve2">
-                <h4 class="text-center">Front-end Development</h4>
-                <p class="text-muted text-center">Crafting responsive and intuitive user-interfaces with HTML, CSS, JavaScript, and Bootstrap for consistent functionality across all devices.</p>
-            </div>
-            <div class="col service3">
-                <img src="ui_ux_design1.png" alt="" class="serve3">
-                <h4 class="text-center">UI/UX Design</h4>
-                <p class="text-muted text-center">Crafting engaging UI/UX designs for seamless interaction and aesthetic appeal across all platforms.</p>
-            </div>
-            <div class="col service4">
-                <img src="response1.png" alt="" class="serve4">
-                <h4 class="text-center">Responsive Design</h4>
-                <p class="text-muted text-center">Creating flexible and adaptive web layouts that adjust smoothly to different screen sizes and devices for an optimal user experience.</p>
-            </div>
-       </div>
-    </section>
-
-    <section id="collaborate">
-       <div class="row collaboration">
-        <p class="text-muted text-center">My Expertise ?</p>
-        <h1 class="text-center letscollaborate">Let's Collaborate</h1>
-            <div class="col">
-                <img src="NatashaAsnani1.png" alt="" class="natasha1">
-            </div>
-            <div class="col collaborate">
-                <p>In the vast digital landscape, your project deserves a distinctive touch that merges creativity with cutting-edge technology. As a front-end enthusiast, I excel in crafting visually stunning and intuitive user experiences. My unique approach ensures that every element serves a purpose, creating seamless and engaging interfaces. <br><br>  With a deep understanding of development from concept to completion, I bring your vision to life with precision and flair. Collaborating with me means transforming your ideas into exceptional digital realities that stand out and captivate your audience. Let's redefine the digital experience together.</p>
-            </div>
-       </div>
-    </section>
-
-    <section id="profiles">
-       <div class="row icons">
-        <p class="text-muted text-center">Where You Can Find Me ?</p>
-        <h1 class="text-center profiles">Profiles</h1>
-            <div class="col linkedin1">
-                <div class="overlay"></div>
-                <a class="one" href="https://www.linkedin.com/in/natasha-asnani?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeLggQPkIRfqPv5AyB8oDuA%3D%3D">  <i class="fa fa-linkedin link" style="font-size: 50px;"></i> </a>
-                <p class="caption">Linkedin</p>
-            </div>
-            <div class="col github1">
-                <div class="overlay"></div>
-                <a class="one" href="https://github.com/NatashaAsnani"> <i class="fa fa-github git" style="font-size: 50px;"></i> </a>      
-                <p class="caption">Github</p>
-            </div>
-            <div class="col envelope1">
-                <div class="overlay"></div>
-                <a class="one" href="mailto: natasha.asnani21@gmail.com"><i class="fa fa-envelope enve" style="font-size: 50px;"></i></a>  
-                <p class="caption">Email</p>
-            </div>
-       </div>
-    </section>
-
-    <section id="project">
-       <div class="row projects1">
-        <p class="text-muted text-center">What I did ?</p>
-        <h1 class="text-center myportfolio">Portfolio</h1>
-            <div class="col-md-6 project1">
-                <img src="Flight.jpg" alt="" class="flight">
-                <div class="description">
-                    <p class="desc1">Flight Booking Website</p>
-                    <button class="demo gradient-button scale-button"><a class="anc1" href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
-                </div>
-            </div>
-            <div class="col-md-6 project2">
-                <img src="portfolio1.png" alt="" class="portfolio">
-                <div class="description1">
-                    <p class="desc2">Portfolio Website</p>
-                    <button class="demo gradient-button scale-button"><a class="anc2" href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
-                </div>
-            </div>
-       </div>
-
-       <div class="row projects2">
-        <div class="col-md-6 project3">
-            <img src="blog.png" alt="" class="blog">
-            <div class="description2">
-                <p class="desc3">The Blog Webpage</p>
-                <button class="demo gradient-button scale-button"><a class="anc3" href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
-            </div>
-        </div>
-        <div class="col-md-6 project4">
-            <img src="aboutus1.png" alt="" class="aboutus">
-            <div class="description3">
-                <p class="desc4">AboutUs Webpage</p>
-                <button class="demo gradient-button scale-button"><a  class="anc4"  href="https://natashaasnani.github.io/FlightBooking-Website/">Live Demo</a></button>
-            </div>
-        </div>
-       </div>
-    </section>
-
-    <section id="contact">
-       <div class="row contact">
-            <p class="text-muted text-center contactme1">How Can You Communicate ?</p>
-            <h1 class="text-center contactme">Contact Me</h1>
-            <div class="col-md-6 texts">
-                <h3>CONTACT IN<span class="info">FO</span> </h3>
-                <div class="icons11">
-                    <i class="fa fa-envelope email1"></i> 
-                    <span class="mailing">Email: <a class="mail" href="mailto: natasha.asnani21@gmail.com"> natasha.asnani21@gmail.com</a></span>
-                    <i class="fa fa-phone phone1"></i> 
-                    <span class="call"> <a class="calling" href="call:+92 3316648781"> Phone: +92 3316648781 </a> </span> 
-                    <i class="fa fa-linkedin linkedin2"></i>
-                    <a class="in" href="https://www.linkedin.com/in/natasha-asnani?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeLggQPkIRfqPv5AyB8oDuA%3D%3D">www.linkedin.com/in/natasha-asnani</a>
-            </div>
-            </div>
-            <div class="col-md-6 contactform">
-                <form  action="https://formspree.io/f/xrbzgjyq" method="POST">
-                    <div class="mb-3">
-                        <input type="text" class="input1" id="exampleInputText1" aria-describedby="emailHelp" placeholder="Name" name="Name" required>
-                        <input type="email" class="email mx-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" name="Email" required>
-                      </div>
-                    <div class="mb-3">
-                      <input type="text" class="input2" id="exampleInputText2" placeholder="Subject" name="Subject" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="message" name="" id="" cols="55" rows="4" placeholder="Enter Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn send">Send</button>
-                  </form>
-            </div>
-       </div>
-    </section>
     </div>
+
+
+    <!-- <script>
+        document.addEventListener('scroll', function() {
+    const line = document.querySelector('.line');
+    const circles = document.querySelectorAll('.circle');
+    const headings = document.querySelectorAll('.para h3');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Calculate the total scrollable height
+    const scrollableHeight = documentHeight - windowHeight;
+
+    // Calculate the height based on the scroll position
+    const lineHeight = (scrollTop / scrollableHeight) * 100;
+
+    // Set the line height as a percentage
+    line.style.height = `${lineHeight}%`;
+
+    // Show or hide circles based on scroll position
+    circles.forEach((circle, index) => {
+        const heading = headings[index];
+        const headingPosition = heading.getBoundingClientRect().top + scrollTop - windowHeight;
+
+        if (scrollTop >= headingPosition) {
+            circle.style.visibility = 'visible';
+            circle.style.backgroundColor = 'blue';
+        } else {
+            circle.style.visibility = 'hidden';
+            circle.style.backgroundColor = 'lightgray';
+        }
+    });
+}); -->
+
+<script>
+
+document.addEventListener('scroll', function() {
+    const line = document.querySelector('.line');
+    const circles = document.querySelectorAll('.circle');
+    const headings = document.querySelectorAll('.para h3');
+    
+    // Get the scroll position
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // Get the window height
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    // Get the document height
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Calculate the total scrollable height
+    const scrollableHeight = documentHeight - windowHeight;
+
+    // Calculate the height of the line based on the scroll position
+    let lineHeight = (scrollTop / scrollableHeight) * 100;
+
+    // Ensure the line height does not exceed 100%
+    lineHeight = Math.min(lineHeight, 70);
+
+    // Set the line height as a percentage
+    line.style.height = `${lineHeight}%`;
+
+    console.log('Scroll Top:', scrollTop);
+    console.log('Line Height:', lineHeight);
+
+    // Show or hide circles based on scroll position
+    circles.forEach((circle, index) => {
+        const heading = headings[index];
+        const headingPosition = heading.getBoundingClientRect().top + scrollTop - windowHeight;
+
+        if (scrollTop >= headingPosition) {
+            circle.style.visibility = 'visible';
+            circle.style.backgroundColor = 'blue';
+        } else {
+            circle.style.visibility = 'hidden';
+            circle.style.backgroundColor = 'lightgray';
+        }
+    });
+});
+
+
+</script>
+
 </body>
 </html>
