@@ -195,6 +195,9 @@
     margin-top: 50px;
 }
 
+.dbms{
+    margin-top: 50px;
+}
 .colone{
     margin-top: 50px;
 }
@@ -724,10 +727,16 @@ input{
     .php{
         display: block;
     }
+    .dbms{
+        display: block;
+    }
      .bootstrap{
         margin-top: 50px;
      }
     .laravel{
+        margin-top: 50px;
+    }
+    .sql{
         margin-top: 50px;
     }
     .progress{
@@ -892,6 +901,12 @@ input{
     .bar2{
         width: 55%;
     }
+    .bar3{
+        width: 90%;
+    }
+    .bar4{
+        width: 95%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
@@ -938,7 +953,14 @@ input{
     .php{
         display: block;
     }
+    .dbms{
+        display: block;
+    }
     .laravel{
+        margin-top: 50px;
+        display: block;
+    }
+    .sql{
         margin-top: 50px;
         display: block;
     }
@@ -1107,6 +1129,13 @@ input{
 .laravel{
     padding-right: 60px;
 }
+.dbms{
+    display: block;
+    width: 600px;
+}
+.sql{
+    padding-right: 60px;
+}
    .progress-bar{
     width: 400px;
 }
@@ -1115,6 +1144,12 @@ input{
 }
     .bar2{
         width: 55%;
+}
+.bar3{
+    width: 90%;
+}
+.bar4{
+    width: 95%;
 }
 }
 
@@ -1148,7 +1183,16 @@ input{
         left:400px;
         margin-top: 50px;
     }
+    .colone{
+        padding-right: 50px;
+    }
     .coltwo{
+        padding-right: 50px;
+    }
+    .colthree{
+        padding-right: 50px;
+    }
+    .colfour{
         padding-right: 50px;
     }
     .js{
@@ -1157,7 +1201,7 @@ input{
     }
     .bootstrap{
         margin-top: 50px;
-        /* padding-right: 50px; */
+        padding-right: 50px;
     }
     .php{
         display: block;
@@ -1165,7 +1209,15 @@ input{
     }
     .laravel{
         margin-top: 50px;
-        /* padding-right: 50px; */
+        padding-right: 50px;
+    }
+    .dbms{
+        display: block;
+        width: 800px;
+    }
+    .sql{
+        margin-top: 50px;
+        padding-right: 50px;
     }
     .services{
         width: 700px;
@@ -1319,7 +1371,21 @@ input{
     .bar2{
         width: 55%;
     }
-
+    .bar3{
+        width: 90%;
+    }
+    .bar4{
+        width: 95%;
+    }
+    .bar5{
+        width: 100%;
+    }
+    .bar6{
+        width: 99%;
+    }
+    .bar7{
+        width: 98%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px){
@@ -1359,6 +1425,12 @@ input{
     .laravel{
         padding-right: 60px;
     }
+    .dbms{
+        width: 1050px;
+    }
+    .sql{
+        padding-right: 60px;
+    }
     .progress-bar{
         width: 400px;
     }
@@ -1367,6 +1439,12 @@ input{
     }
     .bar2{
         width: 55%;
+    }
+    .bar3{
+        width: 90%;
+    }
+    .bar4{
+        width: 95%;
     }
     .services{
         width: 1000px;
