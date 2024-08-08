@@ -425,7 +425,7 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    background-color: #101210;
+    background-color: #000000;
     color: rgb(251, 247, 247);
     font-size: 16px;
     left: 315px;
@@ -436,7 +436,7 @@
 }
 .desc1{
     margin-top: 95px;
-    font-size: x-large;
+    font-size: xx-large;
     color: rgb(255, 255, 255);
 }
 .anc1{
@@ -448,7 +448,7 @@
 }
 
 .project1:hover .description {
-    opacity: 0.7;
+    opacity: 0.85;
   }
  
 .demo{
@@ -514,11 +514,11 @@
 }
 .desc2{
     margin-top: 95px;
-    font-size: x-large;
+    font-size: xx-large;
     color: rgb(255, 255, 255);
 }
 .project2:hover .description1 {
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .anc2{
@@ -551,11 +551,11 @@
 }
 .desc3{
     margin-top: 100px;
-    font-size: x-large;
+    font-size: xx-large;
     color: rgb(255, 255, 255);
 }
 .project3:hover .description2 {
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .anc3{
@@ -589,11 +589,11 @@
 }
 .desc4{
     margin-top: 100px;
-    font-size: x-large;
+    font-size: xx-large;
     color: rgb(255, 255, 255);
 }
 .project4:hover .description3 {
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .anc4{
@@ -820,14 +820,14 @@ input{
     }
     .blog{
         width: 400px;
-        height: 250px;
+        height: 200px;
     }
     .description2{
         position: absolute;
-        margin-top: -129px;
+        margin-top: -100px;
         left: 211px;
         width: 390px;
-        height: 240px;
+        height: 200px;
     }
     .desc3{
         margin-top: 60px;
@@ -918,7 +918,7 @@ input{
         display: none;
     }
     .about{
-        border: 1px solid;
+        /* border: 1px solid; */
         width: 580px;
         padding-left: 0px;
         text-align: center;
@@ -985,6 +985,9 @@ input{
         width: 700px;
         margin-left: 100px;
     }
+    .projects2{
+        margin-top: 30px;
+    }
     .icons{
         width: 600px;
         padding-left: 30px;
@@ -1012,12 +1015,20 @@ input{
         width: 390px;
         height: 160px;
     }
+    .project3{
+        /* width: 400px; */
+        padding-left: 0px;
+    }
     .description{
         position: absolute;
         margin-top: -81px;
         left: 305px;
         width: 390px;
         height: 160px;
+    }
+    .project4{
+        margin-top: 350px;
+        padding-left: 115px;
     }
     .desc1{
         margin-top: 20px;
@@ -1064,10 +1075,10 @@ input{
     }
     .description3{
         position: absolute;
-        margin-top: -75px;
-        left: 320px;
+        margin-top: -80px;
+        left: 310px;
         width: 385px;
-        height: 150px;
+        height: 160px;
     }
     .desc4{
         margin-top: 20px;
