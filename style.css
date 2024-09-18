@@ -819,15 +819,15 @@ input{
         margin-top: 40px;
     }
     .blog{
-        width: 400px;
+        width: 388px;
         height: 200px;
     }
     .description2{
         position: absolute;
         margin-top: -100px;
-        left: 209px;
-        width: 394px;
-        height: 180px;
+        left: 205px;
+        width: 391px;
+        height: 200px;
     }
     .desc3{
         margin-top: 60px;
@@ -1060,9 +1060,9 @@ input{
     .description2{
         position: absolute;
         margin-top: 230px;
-        left: 308px;
+        left: 310px;
         width: 390px;
-        height: 160px;
+        height: 158px;
     }
     .desc3{
         margin-top: 20px;
@@ -1272,7 +1272,7 @@ input{
     }
     .flight{
         width: 700px;
-        margin-top: 30px;
+        /* margin-top: 130px; */
         padding-left: 50px;
     }
     .description{
@@ -1298,21 +1298,24 @@ input{
         width: 649px;
         height: 280px;
     }
+    .project4{
+        width: 800px;
+    }
     .desc2{
         margin-top: 100px;
     }
     .blog{
-        width: 715px;
-        height: 400px;
+        width: 705px;
+        height: 360px;
         margin-top: 400px;
         padding-left: 50px;
     }
     .description2{
         position: absolute;
-        margin-top: -200px;
-        left: 392px;
-        width: 652px;
-        height: 400px;
+        margin-top: -180px;
+        left: 390px;
+        width: 655px;
+        height: 360px;
     }
     .desc3{
         margin-top: 150px;
@@ -1325,9 +1328,9 @@ input{
     }
     .description3{
         position: absolute;
-        margin-top: 990px;
-        left: 393px;
-        width: 660px;
+        /* margin-top: 100px; */
+        left: 385px;
+        width: 650px;
         height: 280px;
     }
     .desc4{
@@ -1335,7 +1338,7 @@ input{
     }
     .contact{
         width: 800px;
-        margin-top: 500px;
+        margin-top: 100px;
     }
     .texts{
         padding-left: 20px;
@@ -1494,8 +1497,12 @@ input{
     .project1{
         margin-top: 50px;
     }
+    .projects2{
+        position: relative;
+        width: 950px;
+    }
     .flight{
-        width: 450px;
+        width: 495px;
         height: 200px;
     }
     .description{
@@ -1527,14 +1534,14 @@ input{
     }
     .blog{
         height: 200px;
-        width: 450px;
+        width: 470px;
     }
     .description2{
         position: absolute;
         margin-top: -100px;
-        left: 235px;
-        width: 440px;
-        height: 200px;
+        left: 237px;
+        width: 450px;
+        height: 198px;
     }
     .desc3{
         margin-top: 60px;
@@ -1547,9 +1554,10 @@ input{
     }
     .description3{
         position: absolute;
-        margin-top: 100px;
-        left: 730px;
-        width: 500px;
+        top: 270px;
+        /* margin-top: 0px; */
+        left: 735px;
+        width: 495px;
         height: 200px;
     }
     .desc4{
